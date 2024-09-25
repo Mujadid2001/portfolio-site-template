@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Grotesk&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+}
+:root{
+  --bgColor: rgb(2, 75, 72);
+  --primaryFontcolor:rgb(175, 213, 6);
+  --secondarfontcolor: black;
+  --whitecolor:white;
+
+}
+body{
+    background-color: var(--bgColor);
+    line-height: 1.7rem;
+    font-size: 1.3rem;
+    font-family: "Libre Baskerville", serif;
+
+
+
+}
+.cursor-ball {
+    
+  width: 20px;
+  height: 20px;
+  background-color:var(--primaryFontcolor);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.1s ease-out;
+  position:fixed;
+  z-index: 100;
+  
+ 
+}
+p{
+    font-size: 1rem;
+    
+}
+h2{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+a{
+  font-size: medium;
+  color: var(--secondarfontcolor);
+  transition: 0.5s;
+  text-decoration: none;
+}
+a:hover{
+  color:var(--primaryFontcolor);
+  padding: 0.5rem;
+  background-color:var(--secondarfontcolor);
+  border-radius: 5%;
+
+
+
+}
+.outerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  header{
+    margin-bottom: 20px;
+  }
+  
+  .innerContainer {
+    background-color: var(--whitecolor);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow:2px 3px 20px white;
+    width: 30%;
+    height: fit-content;
+    
+  }
+  label{
+    font-size: 1.3rem;
+
+  }
+  input{
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    background-color:var(--bgColor);
+    border-color: var(--secondarfontcolor);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: 0.7s;
+
+  }
+  input:focus{
+    background-color: var(--secondarfontcolor);
+    color: var(--whitecolor);
+  
+
+  }
+  input[type='submit']{
+    width:30%;
+    margin-inline: 9rem;
+    padding: 0.6rem;
+    font-size: larger;
+    background-color: var(--primaryFontcolor);
+    transition: 0.5s;
+  }
+  input[type='submit']:hover{
+    background-color: var(--secondarfontcolor);
+    color: var(--whitecolor);
+    cursor: pointer;
+  }
+
+  footer{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: flex-end;
+
+  }
+  .gobackContnr{
+    display: flex;
+    position: absolute;
+    gap: 20px;
+    margin: 3rem;
+    color: white;
+  }
+  .gobackContnr a{
+    color: white;
+    font-size: large;
+    transition: 0.7s;
+
+  }
+  .gobackContnr a:hover{
+    text-decoration: underline rgb(175, 213, 6);
+    transform:translateY(-12px) translateX(-19px);
+    cursor: pointer;
+    background-color: inherit;
+  
+
+
+  }
+  /* Laptops (HD, FHD) */
+  @media (max-width: 1440px) and (min-width: 1200px) {
+    input[type='submit']{
+      margin-inline: 0rem;
+      font-size: large;
+      width: 40%;
+    }
+    
+
+   
+
+  }
+  
+  /* Tablets (iPad, Android) */
+  @media (max-width: 1200px) and (min-width: 1080px) {
+
+   
+    input[type='submit']{
+
+      margin-inline: 0rem;
+      font-size: large;
+    }
+    .innerContainer {
+      
+      width: 50%;
+      
+      
+  }
+
+  }
+  
+  /* Large Mobile Devices (Phablets) */
+  @media (max-width: 1080px) and (min-width: 640px) {
+    input[type='submit']{
+      margin-inline: 0rem;
+    }
+    footer{
+
+      flex-direction: column;
+      margin-top: 3rem;
+      align-items: flex-start;
+     
+      gap: 0.5rem;
+  
+  
+    }
+    
+  
+    .innerContainer {
+      
+      width: 70%;
+      
+      
+  }
+  }
+  
+  /* Medium Mobile Devices (Smartphones) */
+  @media (max-width: 639px) and (min-width: 200px) 
+  {
+    input[type='submit']{
+      margin-inline: 0rem;
+      font-size: large;
+
+    }
+    footer{
+
+      flex-direction: column;
+      margin-top: 3rem;
+      align-items: flex-start;
+     
+      gap: 0.5rem;
+  
+  
+    }
+  
+    .innerContainer {
+      
+      width: 70%;
+      
+      
+  }
+  label{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+    
+
+    
+
+
+  }
+
+  

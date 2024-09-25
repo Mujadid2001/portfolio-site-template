@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Grotesk&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+}
+:root{
+    --bgColor: rgb(2, 75, 72);
+    --primaryTxtCOlor: #ffffff;
+    --cursorballClr: rgb(175, 213, 6);
+}
+
+body {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    color: var(--primaryTxtCOlor);
+    width: 100vw;
+    height: 100vh;
+    background-color:var(--bgColor);
+    
+}
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+h1 {
+    font-size: 2.5rem;                
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+a{
+    text-decoration: none;
+    color: var(--primaryTxtCOlor);
+    transition: all 0.5s ease;
+    
+}
+a:hover{
+    text-decoration: underline var(--cursorballClr) ;
+    transform:translateY(5px) translateX(-7px);
+    cursor: pointer;
+    
+}
+
+ /* styles for Certificate.html, Expertise.html, and Project.html */
+
+.grid{
+    display: grid;
+}
+.grdcntr{
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    border: 2px solid white;
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 2px 3px 30px white;
+    margin-top: 35vh;
+    margin-inline: 4vh;
+
+
+    
+}
+.columnn{
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    align-self: center;
+    transition: 1s;
+}
+.columnn:hover{
+    color: var(--cursorballClr);
+    background-color: black;
+    cursor: pointer;
+}
+.grd-hdr-text{
+    position: absolute;
+    top: 18vh;
+    left: 5vh;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+    transition: 1s;
+ 
+}
+.grd-hdr-text:hover{
+    background-color: black;
+    color: var(--cursorballClr);
+    text-decoration: none;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    box-shadow: 2px 3px 30px white;
+}
+.rw{
+    overflow: hidden;
+}
+.rw:hover{
+    cursor: pointer;
+    background-color: black;
+    color: var(--cursorballClr);
+    text-decoration: none;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    box-shadow: 2px 3px 30px white;
+    transition: 0.7s;
+
+    
+}
+
+/* Media Queries */
+
+/* Large Desktops */
+@media (min-width: 1200px) {
+    .grdcntr {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+      margin-inline: 4vh;
+    }
+  }
+  
+  /* Medium Desktops and Laptops */
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .grdcntr {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+      overflow: auto; /* Add horizontal scrolling */
+    }
+  }
+  
+  /* Small Screens (Tablets) */
+  @media (max-width: 991px) and (min-width: 768px) {
+    .grdcntr {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+      overflow: auto; /* Add horizontal scrolling */
+    }
+  }
+  
+  /* Extra Small Screens (Mobile Devices) */
+  @media (max-width: 767px) {
+    .grdcntr {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;;
+      margin-inline: 1vh;
+      overflow: auto; /* Add horizontal scrolling */
+    }
+  }
+  .back{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 1rem;
+}
+.back a:hover{
+    text-decoration: underline var(--cursorballClr) ;
+    transform:translateY(-5px) translateX(4px);
+    cursor: pointer;
+    font-size: large;
+
+}
+
