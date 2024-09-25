@@ -19,6 +19,6 @@ for you custom images:
 3. DOn't change images name in Assets folder
 4. New images should have the same previous names
 
-© 2024 Muadid Majeed: Email:mujadid2001@gmail.com. All Rights Reserved.
+© 2024 Mujadid Majeed: Email:mujadid2001@gmail.com. All Rights Reserved.
 
 
