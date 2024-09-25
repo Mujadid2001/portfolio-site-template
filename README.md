@@ -20,5 +20,6 @@ for you custom images:
 4. New images should have the same previous names
 
 © 2024 Mujadid Majeed: Email:mujadid2001@gmail.com. All Rights Reserved.
+⚠️ This project is protected by copyright. Any unauthorized use will result in legal action. See LICENSE for details.
 
 
